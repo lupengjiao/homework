@@ -417,7 +417,7 @@
   			var offset=document.documentElement.scrollTop;
   			//（1）根据鼠标位置来计算放大镜位置
   			var left = ev.clientX - zhong.offsetLeft - slider.offsetWidth/2-180;
-  			var top = ev.clientY - zhong1.offsetTop -slider.offsetHeight/2-58;
+  			var top = ev.clientY - zhong1.offsetTop -slider.offsetHeight/2-58+offset;
   			var maxLeft = good.offsetWidth - slider.offsetWidth;
   			var maxTop = good.offsetHeight - slider.offsetHeight;
   			left = left>maxLeft?maxLeft:left<0?0:left;
